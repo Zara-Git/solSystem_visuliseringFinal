@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="myscript.js" defer></script>
+
+</head>
+<body>
+    <!-- Overlay för planetinformation -->
+<div id="overlay">
+    <div id="overlay-content"></div>
+    <button class="planet-button"></button>
+</div>
+
+<div id="container">
+    <h2>SOLSYSTEMET</h2>
+    <h4>SOLARIS</h4>
+</div>
+
+<div id="planetInfo">
+    <h4>${currentCelestialBody.englishName}</h4>
+    <p>ID: ${currentCelestialBody.id}</p>
+    <p>Type: ${currentCelestialBody.isPlanet ? 'Planet' : 'Star'}</p>
+    <p>Rotation: ${currentCelestialBody.rotation}</p>
+</div>
+
+<div id="gul-cirkel" data-name="Solen" onclick="findCelestialBodyByName(event)">
+</div>
+
+<div class="solSystemet">
+    <div id="marcuries" data-name="Merkurius" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 2.svg" alt="">
+    </div>
+
+    <div id="venus" data-name="Venus" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 3.svg" alt="">
+    </div>
+
+    <div id="jurden" data-name="Jorden" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 4.svg" alt="">
+    </div>
+
+    <div id="mars" data-name="Mars" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 5.svg" alt="">
+    </div>
+
+    <div id="jupiter" data-name="Jupiter" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 6.svg" alt="">
+    </div>
+
+    <div id="suternes" data-name="Saturnus" onclick="findCelestialBodyByName(event)" style="position: relative;">
+        <img src="image/Ellipse 7.svg" alt="" >
+        <img src="image/Ellipse 10.svg" alt="" style="position: absolute;top: 10px;left: -20px;">
+    </div>
+
+    <div id="uranus" data-name="Uranus" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 8.svg" alt="">
+    </div>
+
+    <div id="neptunus" data-name="Neptunus" onclick="findCelestialBodyByName(event)">
+        <img src="image/Ellipse 9.svg" alt="">
+    </div>
+</div>
+
+</body>
+</html>

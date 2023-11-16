@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+    height: 100vh;
+    margin: 0;
+  }
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+
+  #overlay-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  
+  .planet-button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+        
+  #container {
+    margin-right:40px ;
+  }
+  
+#container h2 {
+    font-family: Secular One;
+    font-size: 30px;
+    font-weight: 20;
+    line-height: 60px;
+    letter-spacing: 0.09em;
+    text-align: right;
+    color: #FFFFFF;
+  }
+
+  #container h4{
+    color: #FFD029;
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.6em;
+    text-align: right;
+    }
+    #gul-cirkel {
+        width: 600px; 
+        height: 600px; 
+        background: #FFD029;
+        box-shadow: 0px 0px 250px 0px #FFD02933;
+        border-radius: 50%;
+        position: absolute;
+        top: 5%;
+        left:-450px;
+     }
+    .solSystemet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      
+    .solSystemet img {
+        margin: 0 10px; 
+      }
+
+#planetInfo{
+  position: relative;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  display: none;
+  transform: scale(1.2);
+}
